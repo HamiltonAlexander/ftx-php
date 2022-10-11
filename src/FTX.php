@@ -20,7 +20,7 @@ use FTX\Client\HttpClient;
 
 final class FTX
 {
-    const BASE_URI = 'https://ftx.com/api';
+    const BASE_URI = 'https://ftx.us/api';
     
     protected HttpClient $client;
     
