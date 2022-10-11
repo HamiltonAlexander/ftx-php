@@ -100,15 +100,15 @@ class HttpClient
         }
         
         if(null !== $this->subaccount) {
-            $request = $request->withHeader('FTX-SUBACCOUNT', $this->subaccount);
+            $request = $request->withHeader('FTXUS-SUBACCOUNT', $this->subaccount);
         }
         
         if(null !== $this->api_key && null !== $this->api_secret) {
             $timestamp = time()*1000;
             $request = $request->withHeader('Content-Type', 'application/json');
-            $request = $request->withHeader('FTX-KEY', $this->api_key);
-            $request = $request->withHeader('FTX-TS', $timestamp);
-            $request = $request->withHeader('FTX-SIGN', $this->calculateSignature($timestamp, $request, $payload));
+            $request = $request->withHeader('FTXUS-KEY', $this->api_key);
+            $request = $request->withHeader('FTXUS-TS', $timestamp);
+            $request = $request->withHeader('FTXUS-SIGN', $this->calculateSignature($timestamp, $request, $payload));
         }
         
         return $request;
