@@ -1,5 +1,5 @@
 {
-    "name": "vdbelt/ftx-php",
+    "name": "hamiltonalexander/ftx-php",
     "description": "A PHP client for FTX.com",
     "type": "library",
     "license": "MIT",
