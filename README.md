@@ -4,7 +4,7 @@
 [![Packagist](https://img.shields.io/packagist/dt/vdbelt/ftx-php)](https://packagist.org/packages/vdbelt/ftx-php)
 [![GitHub](https://img.shields.io/github/license/vdbelt/ftx-php)](https://github.com/vdbelt/ftx-php/blob/master/LICENSE.md)
 
-This package aims to implement the FTX.com REST API endpoints.
+This package aims to implement the FTX.us REST API endpoints.
 
 ## Installation
 You can install the package via composer:
